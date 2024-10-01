@@ -5,13 +5,19 @@
  padding: 0;
  box-sizing: border-box;
  font-family: 'Poppins', sans-serif;
- background-image: url("IMG/fond-site.png");
+ 
+}
+.img{
+  width: 500px;
+  height: 500px;
+ display: inline-flex;
+ margin-left: 200px ;
+ border-radius: 500px;
 }
 
 
-
    header {
- position: fixed;                  
+                  
  top: 0;                           
  left: 0;                           
  width: 100%;                      
@@ -19,7 +25,8 @@
  display: flex;                  
  justify-content: space-between;   
  align-items: center;              
- z-index: 100;                     
+ z-index: 100;    
+              
 }                        
                                 
 .logo{                              
@@ -33,7 +40,7 @@ span{
 }                         
                                 
 .navigation a{                         
-
+  
  font-size: 1.1em;                       
  color: rgb(68, 60, 60);          
  text-decoration: none;            
@@ -127,17 +134,22 @@ background: orange;
 
 .sosmed {
 
-position: absolute;
-
-bottom: 50px;
+position: relative;
+ top: 150px;
+ left: 400px;
+ width: max-content;
+ 
 }
 
-
+.sosmed a img{
+  height: 80px;
+  width: 80px;
+}
 
 .sosmed a {
 display: inline-block;
-width: 35px;
-height: 35px;
+width: 100px;
+height: 100px;
 background: transparent;
 border-radius: 50%;
 margin-right: 22px;
@@ -159,11 +171,301 @@ transform: translateY(-5px);
 
 .sosmed a i{
 color: rgb(68, 60, 60);
-font-size: 20px;
+font-size: 80px;
 
 }
 
+.aboutpart{
+   height: 655px;
+   width: 1349px;
+  background-color: orange;
+  
+   
+}
+ 
+.about-text{
+  font-size: 50px;
+  background-color: gray;
+  max-width: 600px;
+  
+  border-radius: 30px 100px 30px 100px;
+  transform: rotate(6deg);
+}
+ 
+ 
+.about-text h2 {
+  margin-left: 150px;
+}
+.aboutimg  img{
+  height: 300px;
+  width: 300px;
+  
+ 
+}
+.aboutimg{
+  display: flex;
+}
+ .about-text1{
+  max-width: 1000px;
+  margin: 40px 0px 0px 20px ;
+  display: inline-block;
+  font-size: 25px;
+  position: relative;
+  font-weight: bold;
+  font-style: italic;
+  font-variant-position: super;
+}
+ 
+
+.conf{
+  background-color: rgb(233, 123, 224);
+  border-radius: 15px;
+  max-width: max-content;
+  margin: 0px 0px 0px 100px ;
+}
+.confp{
+ padding: 20px  100px;
+ font-size: 25px;
+ font-weight: bold;
+}
+ 
+html{
+  scroll-behavior: smooth;
+}
+.Projectpart{
+  height: 2150px;
+  width: 1349px;
+ background-color: rgb(0, 132, 255);
+ 
+
+}
+.projet-text{
+ font-size: 50px;
+ background-color: rgb(128, 128, 128);
+ max-width: 600px;
+  
+ border-radius: 30px 100px 30px 100px;
+ transform: rotate(6deg);
+}
+
+.projet-text h2 {
+  margin-left: 150px;
+}
+.project-title{
+  margin-left: 180px;
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  width: 1000px;
+  margin-top: 30px;
+  border-radius: 40px;
+}
+.p{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+  margin-left:140px ;
+ margin-top: 30px;
+  
+}
+.project-img{
+  margin-left: 190px;
+  max-width: max-content;
+  display: grid;
+}
+.project-img img{
+  height: 300px;
+  width: 700px;
+  border-radius: 40px;
+}
+.project-img p{
+   background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  width: 700px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+}
+.lang{
+  position: absolute;
+  width: 300px;
+  margin-left: 700px;
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+ 
+.contactpart{
+  height: 655px;
+  width: 1349px;
+ background-color: rgb(255, 255, 255);
+ 
+  
+}
+
+.contact-text{
+ font-size: 50px;
+ background-color: gray;
+ max-width: 600px;
+ 
+ border-radius: 30px 100px 30px 100px;
+ transform: rotate(6deg);
+}
 
 
+.contact-text h2 {
+ margin-left: 150px;
+}
+/* responsive */
+/* Pour les appareils de taille tablette (portrait) */
+@media (max-width: 768px) {
+  /* Ajustement du header */
+  header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .navigation a {
+    margin: 10px 0;
+    font-size: 1em;
+  }
 
+  .tombol-download {
+    margin-right: 0;
+    margin-top: 10px;
+  }
 
+  /* Image et contenu */
+  .img {
+    width: 10%;
+    height: auto;
+    margin-left: 0;
+    border-radius: 50%;
+  }
+
+  .content h2, .content h4 {
+    text-align: center;
+  }
+
+  /* Section about */
+  .aboutpart {
+    height: auto;
+    padding: 20px;
+  }
+
+  .aboutimg img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-text1 {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  /* Projets */
+  .Projectpart {
+    height: auto;
+  }
+
+  .project-img {
+    grid-template-columns: 1fr;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lang {
+    margin-left: 0;
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+
+/* Pour les smartphones */
+@media (max-width: 480px) {
+  /* Header et navigation */
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  section{
+    height: 500px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .navigation a {
+    font-size: 0.9em;
+  }
+
+  .tombol-download {
+    padding: 6px 25px;
+    font-size: 0.9em;
+  }
+
+  /* Ajustement du texte et des images */
+  .content h2 {
+    font-size: 2em;
+  }
+
+  .content h4 {
+    font-size: 1.5em;
+  }
+
+  .about-text {
+    font-size: 1.5em;
+  }
+
+  .aboutimg img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .about-text1 {
+    font-size: 16px;
+  }
+
+  /* Projets */
+  .project-title {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .project-img img {
+    height: auto;
+    width: 100%;
+  }
+
+  .lang {
+    font-size: 18px;
+  }
+
+  /* Réseaux sociaux */
+  .sosmed a {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  .sosmed a img, .sosmed a i {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+  }
+}
